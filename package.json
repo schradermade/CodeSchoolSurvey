@@ -34,5 +34,13 @@
     "jquery": "^3.5.1",
     "mysql": "^2.18.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarahGilbert064/Student-Survey.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SarahGilbert064/Student-Survey/issues"
+  },
+  "homepage": "https://github.com/SarahGilbert064/Student-Survey#readme"
 }
