@@ -1,0 +1,25 @@
+@media screen and (min-width: 50rem) {
+  .container {
+    margin: auto;
+    padding: 1rem;
+    max-width: 60rem;
+  }
+
+  body {
+    background-image:url();
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .jumbotron {
+    border: 12px black;
+    padding: 34px;
+    box-sizing: border-box;
+    border-style: groove;
+    border-radius: 0 0 85% 85% / 30%;
+  }
+}  
