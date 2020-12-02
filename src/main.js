@@ -8,5 +8,6 @@ $(document).ready(function() {
     event.preventDefault();
     let gender = $("input:radio:checked").val();
     console.log(`The user input is: ${gender}`);
+    
   });
 });
