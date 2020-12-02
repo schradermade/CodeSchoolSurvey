@@ -1,12 +1,20 @@
 @media screen and (min-width: 50rem) {
   .container {
     margin: auto;
-    padding: 1rem;
+    padding: 4%;
     max-width: 60rem;
   }
-
+  #aboutUser {
+    padding: 5%;
+  }
+  p {
+    color: rgb(75, 36, 36);
+  }
+ 
   body {
     /* background-image:url(); */
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(223, 224, 224);
     box-sizing: border-box;
     text-align: center;
     width: 100%;
@@ -14,9 +22,10 @@
     background-size: cover;
     background-attachment: fixed;
   }
-
   .jumbotron {
     border: 12px black;
+    background-color: rgb(224, 235, 245);
+    color: rgb(70, 70, 70);
     padding: 34px;
     box-sizing: border-box;
     border-style: groove;

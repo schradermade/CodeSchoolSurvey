@@ -3,11 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <title>Student Survey</title>
 </head>
 <body>
   <div class="container">
-    <div class="jumbotron">Student Survey
+    <div class="jumbotron">
+      <h2><u><strong>Student Survey</strong></u></h2>
+      <button id="logout2" class="button"></button>Logout</button> 
+      <script type="text/javascript">
+        function logout() {
+          oktaSignIn.signOut();
+          location.reload();
+        }
+        document.getElementById("logout2").onclick = function () {
+          location.href = "http://localhost:8080/";
+          
+          //logout();
+        };
+      </script>
       <div id="aboutUser">
         <form id="gender">
           <p>What is your gender?</p>
@@ -49,7 +63,7 @@
           <input type="radio" id="someCollege" name="school" value="someCollege">
           <label for="someCollege">Some College</label>
           <input type="radio" id="degree" name="school" value="degree">
-          <label for="degree">College Degree/BA</label>
+          <label for="degree">College Degree/BA</label><br>
           <input type="radio" id="masters" name="school" value="masters">
           <label for="masters">Masters Degree</label>
           <input type="radio" id="na" name="school" value="na">
@@ -64,10 +78,11 @@
           <input type="radio" id="weekends" name="working" value="weekends">
           <label for="weekends">Weekends Only</label>
           <input type="radio" id="noWork" name="working" value="noWork">
-          <label for="noWork">I will not be working.</label>
+          <label for="noWork">I will not be working.</label><br>
           <input type="radio" id="na" name="working" value="na">
           <label for="na">Rather not say</label>
         </form>
+        <br>
         <button type="submit" id="userResponse" class="btn btn-success">Submit Answers</button>
       </div>
     </div>  

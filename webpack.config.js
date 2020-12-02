@@ -15,10 +15,15 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new Dotenv(),
     new HtmlWebpackPlugin({
-      title: 'webpack-environment',
-      template: './src/index.html',
+      title: 'survey',
+      template: './src/survey.html',
+      inject: 'body'
+    }),
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'login',
+      template: './src/login.html',
       inject: 'body'
     })
   ],
