@@ -7,18 +7,70 @@
 </head>
 <body>
   <div class="container">
-    <div class="jumbotron">Student Survey</div>
-    <form id="aboutUser">
-      <input type="radio" id="male" name="gender" value="male">
-      <label for="male">Male</label>
-      <input type="radio" id="female" name="gender" value="female">
-      <label for="female">Female</label>
-      <input type="radio" id="nonbinary" name="gender" value="nonbinary">
-      <label for="nonbinary">Non-Binary</label>
-      <input type="radio" id="na" name="gender" value="na">
-      <label for="na">Rather not say</label>
-      <button type="submit" id="response" class="btn btn-success">Next Question</button>
-    </form>
+    <div class="jumbotron">Student Survey
+      <div id="aboutUser">
+        <form id="gender">
+          <p>What is your gender?</p>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+          <input type="radio" id="nonbinary" name="gender" value="nonbinary">
+          <label for="nonbinary">Non-Binary</label>
+          <input type="radio" id="na" name="gender" value="na">
+          <label for="na">Rather not say</label>
+        </form>
+        <form id="age">
+          <p>What age group do you fall into?</p>
+          <input type="radio" id="18-25" name="age" value="18-25">
+          <label for="18-25">18-25</label>
+          <input type="radio" id="25-35" name="age" value="25-35">
+          <label for="25-35">25-35</label>
+          <input type="radio" id="35-45" name="age" value="35-45">
+          <label for="35-45">35-45</label>
+          <input type="radio" id="45+" name="age" value="45+">
+          <label for="45+">45+</label>
+          <input type="radio" id="na" name="age" value="na">
+          <label for="na">Rather not say</label>
+        </form>
+        <form id="kids">
+          <p>Do you have children that live at home?</p>
+          <input type="radio" id="yes" name="kids" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="kids" value="no">
+          <label for="no">No</label>
+          <input type="radio" id="na" name="kids" value="na">
+          <label for="na">Rather not say</label>
+        </form>
+        <form id="school">
+          <p>What is your highest level of education?</p>
+          <input type="radio" id="hsOrGed" name="school" value="hsOrGed">
+          <label for="hsOrGed">High School Diploma/GED</label>
+          <input type="radio" id="someCollege" name="school" value="someCollege">
+          <label for="someCollege">Some College</label>
+          <input type="radio" id="degree" name="school" value="degree">
+          <label for="degree">College Degree/BA</label>
+          <input type="radio" id="masters" name="school" value="masters">
+          <label for="masters">Masters Degree</label>
+          <input type="radio" id="na" name="school" value="na">
+          <label for="na">Rather not say</label>
+        </form>
+        <form id="working">
+          <p>Do you plan on working while going to school? If so, how often?</p>
+          <input type="radio" id="fullTime" name="working" value="fullTime">
+          <label for="fullTime">Full Time</label>
+          <input type="radio" id="partTime" name="working" value="partTime">
+          <label for="partTime">Part Time</label>
+          <input type="radio" id="weekends" name="working" value="weekends">
+          <label for="weekends">Weekends Only</label>
+          <input type="radio" id="noWork" name="working" value="noWork">
+          <label for="noWork">I will not be working.</label>
+          <input type="radio" id="na" name="working" value="na">
+          <label for="na">Rather not say</label>
+        </form>
+        <button type="submit" id="userResponse" class="btn btn-success">Submit Answers</button>
+      </div>
+    </div>  
   </div>
 </body>
 </html>

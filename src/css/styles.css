@@ -6,7 +6,7 @@
   }
 
   body {
-    background-image:url();
+    /* background-image:url(); */
     box-sizing: border-box;
     text-align: center;
     width: 100%;
@@ -21,5 +21,31 @@
     box-sizing: border-box;
     border-style: groove;
     border-radius: 0 0 85% 85% / 30%;
+  }
+
+  #gender, #age , #kids , #school , #working {
+    border-style: solid;
+    border-radius: 20px;
+    border-color: darkgoldenrod;
+    border-width: 5px;
+    padding: 25px;
+    font-weight: bolder;
+    background-color: silver;
+  }
+
+  #gender , #age , #kids , #school , #working {
+    font-family: 'Big Shoulders Inline Text', cursive;
+    text-align: center;
+  }
+
+  .btn-success {
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,109,1,1) 55%);
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 13px;
+    display: block;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
   }
 }  
