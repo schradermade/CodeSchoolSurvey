@@ -10,17 +10,18 @@
   <div class="container">
     <div class="jumbotron">
       <h2><u><strong>Student Survey</strong></u></h2>
-      <button id="logout2" class="button"></button>Logout</button> 
+      <button id="logout2" class="button">Logout</button>
       <script type="text/javascript">
         function logout() {
           oktaSignIn.signOut();
           location.reload();
         }
         document.getElementById("logout2").onclick = function () {
+          location.reload(true);
           location.href = "http://localhost:8080/";
-          
-          //logout();
+          logout();
         };
+        
       </script>
       <div id="aboutUser">
         <form id="gender">

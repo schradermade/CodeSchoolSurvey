@@ -49,7 +49,7 @@
           registration: true // REQUIRED
         }
       });
-  
+    
       if (oktaSignIn.token.hasTokensInUrl()) {
         oktaSignIn.token.parseTokensFromUrl(
           // If we get here, the user just logged in.
@@ -78,7 +78,9 @@
             document.getElementById("messageBox").innerHTML = "Hello, " + res.login + "! You just logged in. :)";
             document.getElementById("logout").style.display = 'block';
             return;
+            
           }
+          
           oktaSignIn.renderEl(
             { el: '#okta-login-container' },
             function success(res) {
