@@ -1,26 +1,33 @@
-# TODO
+# Full Stack Epicodus Student Survey
 
-### Created by Sarah Gilbert
+### Created by Sarah Gilbert, Nathan Schrader, Callie Stump, Diego Salazar, Austin Schrader during 'Team Week' at Epicodus Coding Bootcamp
 
 ## Description
 
-##### TODO
+The purpose of this application is to be a tool that incoming students to Epicodus would be able to use to assist them with mentally preparing themselves for the curriculum that they would be embarking on. 
 
+Once the user has set up their login, they would be given the option of filling out  an “about user” survey first, that would give the school data on students coming in, but also give students access to this same data to help them have a broad understanding of the mix of people that decide to do a coding bootcamp. 
 
-## Specifications
+The “about user” survey is also 100% optional, however once you have logged in, any student/teacher would be able to reference this data. 
 
-  | Test | Input | Output |
-  | :-------------------- | :------------------------------------- | :-------------------------- |
-  | TODO Function |||
-  | TODO | TODO | TODO |
+All surveys in this application are also completely anonymous.
 
+## Stretch Goals 
+
+* Have connectivity between Okta server and the HTML page
+
+* Create a custom URL using Cloudflare to assit with the functionality of Okta and the survey page
+
+* Creating survey pages for each course, to help collect data on a students experience at Epicodus
+
+* Finish implementing Express.js routing to collect data from the user and input it into MySql and Workbench
 
 
 ## Setup Instruction
 
 #### View Online
 
-* Follow this link https://sarahgilbert064.github.io/TODO
+* Follow this link https://github.com/schradermade/teamWeek7
 
   
 #### Open Locally
@@ -38,21 +45,21 @@
 6. Once the required webpack has been installed, run 'npm run build' to bundle all files.
 
 ## Known Bugs
-#### No known bugs
+In order for the login button on the "login.html" to have functionality, remove line 77 in the scripts tag. This will disconnect the survey.html from the login.html.
 
 ## Support and Contact Details
-* Contact me at sarahgilbert064@gmail.com
+* Any questions or comments? Feel free to contact the team at nathanschrader@icloud.com, sarahgilbert064@gmail.com, salazardiego343@gmail.com, austin.jschrader@gmail.com and callie@stu.mp.
 
 ## Technologies Used
-* HTML
-* CSS
 * JavaScript
 * JQuery
-* Visual Studio Code
-* Jest
-* esLint
-* Babel
+* MySQL (Database)
+* MySQL Workbench
+* Express.js (Routing)
+* Node.js
+* Okta (Authentication)
+* Webpack
 
 ## Legal
-#### Copyright (c) 2020 Sarah Gilbert
-#### This software is licensed under the MIT license
+#### Copyright (c) 2020 Sarah Gilbert, Nathan Schrader, Callie Stump, Diego Salazar, Austin Schrader.
+#### This software is licensed under the MIT license.
